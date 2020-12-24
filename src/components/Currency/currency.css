@@ -1,0 +1,79 @@
+.contentList {
+    text-align: center;
+}
+
+.contentList h2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 20px;
+    margin-bottom: 3rem;
+    background: rgba(3, 15, 26, 0.383);
+    box-shadow: 0px 15px 40px rgba(1, 1, 2, 0.685);
+    color: rgb(6, 158, 158);
+    border-top: 1px solid #f3f3f369;
+    border-bottom: 1px solid #f3f3f369;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #111010c2;
+    color: rgb(15, 222, 230);
+    box-shadow: 0px 2px 1px 1px rgb(9, 117, 117),
+                0px 5px 20px rgba(1, 1, 2, 0.698);   
+}
+
+.list h3 {
+    font-weight: 500;
+}
+
+.list p {
+    font-size: 1.2rem;
+}
+
+
+@media (min-width: 760px) {
+
+    .contentList {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contentList h2 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .listContent {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        min-width: 760px;
+    }
+
+    .list {
+        display: inline-block;
+        align-items: center;
+        justify-content: space-around;
+        width: 300px;
+        margin: 1rem;
+    }
+
+    .list h3 {
+        font-weight: 500;
+    }
+}

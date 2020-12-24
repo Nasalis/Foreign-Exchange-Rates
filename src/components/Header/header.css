@@ -1,0 +1,87 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #094149;
+    color: rgb(251, 247, 247);
+    padding: 0.8rem;
+}
+
+.header h1 {
+    font-size: 1.3rem;
+}
+
+.title {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.btnMenu2 {
+    color: #fff;
+    cursor: pointer;
+    z-index: 10;
+    transition: all ease 0.3s;
+}
+
+.menu {
+    position: absolute;
+    display: none;
+    top: 0;
+    right: -150%;
+    width: 100%;
+    min-height: 100%;
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    background-color: #1c1c1d;
+    border: none;
+    padding: 1rem;
+    transition: all ease 0.3s;
+    z-index: 5;
+}
+
+.menu.active {
+    display: block;
+    right: 0px;
+}
+
+body.active{
+    overflow-y: hidden;
+}
+
+
+.menuList {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 3rem;
+}
+
+.menuItem {
+    position: relative;
+    margin: 1.6rem;
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+.menuItem:hover {
+    font-size: 1.3rem;
+}
+
+.button {
+    position: relative;
+    padding: 10px;
+    box-shadow: 0 5px 50px rgb(12, 97, 122);
+    overflow: hidden;
+}
+
+@media (min-width: 760px) {
+    .menu {
+        position: absolute;
+        display: block;
+        width: 30%;
+    }
+}
